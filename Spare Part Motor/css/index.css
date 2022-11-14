@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+   --primary-color: #ffffff;
+   --secondary-color: #011627;
+   --input-color: #01162763;
+   --custom-color: #6338ec;
+}
+
+.dark-mode-active {
+   --primary-color: #0d0c1d;
+   --secondary-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-color);
+    
+}
+
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+header .navbar {
+    padding-top: 15px;
+}
+
+header .navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar .box-navbar img{
+    width: 10%;
+}
+
+header .navbar .box-navbar  h1{
+    margin: 1%;
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-color);
+}
+
+header .navbar .box-navbar .menu {
+    display: flex;
+    column-gap: 50px;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+header .navbar .box-navbar .menu li {
+    list-style-type: none;
+}
+
+header .navbar .box-navbar .menu li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header .navbar .box-navbar .menu li a:hover {
+    color: var(--custom-color);
+}
+
+header .navbar .box-navbar .fa-bars {
+    font-size: 24px;
+    color: var(--custom-color);
+    display: none;
+}
+
+header .navbar .box-navbar .btn-switch i {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+header .navbar .box-navbar .btn-switch .light-mode.active {
+    display: none;
+}
+
+header .navbar .box-navbar .btn-switch .dark-mode {
+    display: none;
+}
+
+header .navbar .box-navbar .btn-switch .dark-mode.active {
+    display: block;
+    color: var(--secondary-color);
+    font-size: 24px;
+}
+
+/* Hero */
+.hero .box-hero {
+    margin-top: 50px;
+    text-align: center
+}
+
+.hero .box-hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+.hero .box-hero p {
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.hero .box-hero .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .box-hero .btn button {
+    min-width: 120px;
+    height: 45px;
+    background-color:  var(--custom-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 2px;
+    font-size: 14px;
+}
+
+.hero .box-hero .btn input {
+    width: 700px;
+    height: 45px;
+    font-size: 16px;
+    padding-inline: 10px;
+    border: 1px solid var(--input-color);
+}
+/* Hero */
+
+/* Merk */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container h1 {
+    margin: 5px;
+    padding: 30px;
+    color: var(--secondary-color);
+    font-family: "Roboto", sans-serif;
+}
+
+.section {
+    padding: 25px 0;
+}
+
+.box {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+.box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col-5 {
+    width: 20%;
+    height: 200px;
+    border: 1px;
+    text-align: center;
+    float: left;
+    pad: 10px;
+    box-sizing: border-box;
+}
+
+.col-5 p {
+    color: var(--secondary-color);
+}
+/* Merk */
+
+
+/* Profil */
+h3 {
+    color: var(--secondary-color);
+    font-family: "Poppins", sans-serif;;
+}
+
+.container .box .form-profil {
+    padding: 0;
+}
+
+.form-profil {
+    padding: 25px 0;
+}
+
+.box .form-profil {
+    padding-left: 5px;
+}
+
+.input-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100px;
+    color: var(--primary-color);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+    background: var(--custom-color);
+}
+
+.submit:hover {
+    background: var(--secondary-color);
+}
+/* Profil */
+
+/* Data merk */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table tr {
+    height: 30px;
+}
+
+.table tr td {
+    padding: 5px 10px;
+}
+/* Data Merk */
+
+@media screen and (max-width: 990px) {
+    header .navbar .box-navbar .fa-bars {
+        display: block;
+    }
+
+    header .navbar .box-navbar .menu {
+        display: none;
+    }
+
+    header .navbar .box-navbar .btn-switch {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+    .hero .box-hero h1{
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero .box-hero h1 {
+        font-size: 35px;
+    }
+
+    .hero .box-hero .btn button {
+        min-width: 100px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero .box-hero h1 {
+        font-size: 35px;
+    }  
+}
+
